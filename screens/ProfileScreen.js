@@ -147,7 +147,7 @@ const ProfileScreen = () => {
         {/* Profile Header */}
         <View style={styles.profileHeader}>
           <View style={styles.profileImageContainer}>
-            <Image source={{ uri: "https://via.placeholder.com/150" }} style={styles.profileImage} />
+            <Image source={{ uri: "https://cdn-icons-png.flaticon.com/512/3135/3135715.png" }} style={styles.profileImage} />
             <TouchableOpacity style={styles.editImageButton}>
               <Ionicons name="camera" size={20} color="#fff" />
             </TouchableOpacity>

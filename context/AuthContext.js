@@ -29,8 +29,6 @@ export const AuthProvider = ({ children }) => {
 
   const login = async (email, password) => {
     try {
-      // In a real app, you would make an API call to your backend
-      // This is a mock implementation
       const mockUser = {
         id: "123",
         name: "John Doe",

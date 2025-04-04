@@ -75,13 +75,10 @@ function HomeTabs() {
       })}
     >
       <Tab.Screen name="Home" component={HomeScreen} />
-      <Tab.Screen name="Profile" component={ProfileScreen} />
-      <Tab.Screen name="Classes" component={ClassesScreen} />
-      <Tab.Screen name="Workout" component={WorkoutScreen} />
-      <Tab.Screen name="Progress" component={ProgressScreen} />
-      <Tab.Screen name="Nutrition" component={NutritionScreen} />
       <Tab.Screen name="Goals" component={GoalsScreen} />
+      <Tab.Screen name="Nutrition" component={NutritionScreen} />
       <Tab.Screen name="Support" component={SupportScreen} />
+      <Tab.Screen name="Profile" component={ProfileScreen} />
     </Tab.Navigator>
   )
 }
@@ -159,31 +156,46 @@ export default function App() {
                 </>
               ) : (
                 <>
-                  <Stack.Screen 
-                    name="Main" 
-                    component={HomeTabs} 
-                    options={{ headerShown: false }} 
-                  />
-                  <Stack.Screen 
-                    name="ClassDetail" 
-                    component={ClassDetailScreen} 
-                    options={{ title: "Class Details" }} 
-                  />
-                  <Stack.Screen 
-                    name="TrainerProfile" 
-                    component={TrainerProfileScreen} 
-                    options={{ title: "Trainer Profile" }} 
-                  />
-                  <Stack.Screen 
-                    name="WorkoutDetail" 
-                    component={WorkoutDetailScreen} 
-                    options={{ title: "Workout Details" }} 
-                  />
-                  <Stack.Screen 
-                    name="MealPlan" 
-                    component={MealPlanScreen} 
-                    options={{ title: "Meal Plan" }} 
-                  />
+                  <Stack.Screen
+                  name="Main"
+                  component={HomeTabs}
+                  options={{ headerShown: false }}
+                />
+                <Stack.Screen
+                  name="Classes"
+                  component={ClassesScreen}
+                  options={{ title: "Classes" }}
+                />
+                <Stack.Screen
+                  name="Workout"
+                  component={WorkoutScreen}
+                  options={{ title: "Workout" }}
+                />
+                <Stack.Screen
+                  name="Progress"
+                  component={ProgressScreen}
+                  options={{ title: "Progress" }}
+                />
+                <Stack.Screen
+                  name="ClassDetail"
+                  component={ClassDetailScreen}
+                  options={{ title: "Class Details" }}
+                />
+                <Stack.Screen
+                  name="TrainerProfile"
+                  component={TrainerProfileScreen}
+                  options={{ title: "Trainer Profile" }}
+                />
+                <Stack.Screen
+                  name="WorkoutDetail"
+                  component={WorkoutDetailScreen}
+                  options={{ title: "Workout Details" }}
+                />
+                <Stack.Screen
+                  name="MealPlan"
+                  component={MealPlanScreen}
+                  options={{ title: "Meal Plan" }}
+                />
                 </>
               )}
             </Stack.Navigator>
